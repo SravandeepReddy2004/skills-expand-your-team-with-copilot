@@ -1,0 +1,48 @@
+name: Add or Update Student Activity
+description: Request to add a new activity or update an existing one for students.
+labels: [activity, enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please fill out this form to request a new activity or update an existing one. Copilot will use your answers to make the changes for you.
+  - type: input
+    id: activity_name
+    attributes:
+      label: Activity Name
+      description: What is the name of the activity?
+      placeholder: e.g. Science Fair
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Activity Description
+      description: Briefly describe the activity and its purpose.
+      placeholder: e.g. A fair where students present science projects.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What should be true when this activity is correctly added or updated?
+      placeholder: e.g. Activity appears on the website, students can sign up.
+    validations:
+      required: true
+  - type: textarea
+    id: hints
+    attributes:
+      label: Hints, Tips, or Suggestions
+      description: Any ideas or examples to help Copilot get started?
+      placeholder: e.g. Similar to last year's Math Olympiad.
+    validations:
+      required: false
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations or Related Info
+      description: Anything Copilot should avoid, or files/areas to focus on?
+      placeholder: e.g. Do not remove existing activities.
+    validations:
+      required: false

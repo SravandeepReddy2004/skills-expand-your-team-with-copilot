@@ -1,0 +1,40 @@
+name: Request a New Feature
+description: Suggest a new feature or improvement for the website.
+labels: [feature, enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the new feature you would like. Copilot will use your answers to design and build it for you.
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: What is the new feature?
+      description: Describe the feature or improvement you want.
+      placeholder: e.g. Add a calendar for upcoming activities.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What should be true when the feature is complete?
+      placeholder: e.g. Calendar is visible and shows all activities.
+    validations:
+      required: true
+  - type: textarea
+    id: hints
+    attributes:
+      label: Hints, Tips, or Suggestions
+      description: Any ideas or examples to help Copilot get started?
+      placeholder: e.g. Similar to the events page on our school website.
+    validations:
+      required: false
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations or Related Info
+      description: Anything Copilot should avoid, or files/areas to focus on?
+      placeholder: e.g. Do not remove the current activities list.
+    validations:
+      required: false

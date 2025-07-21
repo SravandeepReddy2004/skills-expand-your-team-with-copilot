@@ -1,0 +1,40 @@
+name: Change Website Text or Instructions
+description: Request to update website wording, instructions, or information.
+labels: [content, update]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request changes to website text or instructions. Copilot will use your answers to make the changes for you.
+  - type: textarea
+    id: problem_description
+    attributes:
+      label: What needs to be changed?
+      description: Describe the text or instructions you want updated.
+      placeholder: e.g. Update the welcome message on the homepage.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What should be true when the change is complete?
+      placeholder: e.g. New message is visible to all users.
+    validations:
+      required: true
+  - type: textarea
+    id: hints
+    attributes:
+      label: Hints, Tips, or Suggestions
+      description: Any ideas or examples to help Copilot get started?
+      placeholder: e.g. Use friendly language for students.
+    validations:
+      required: false
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations or Related Info
+      description: Anything Copilot should avoid, or files/areas to focus on?
+      placeholder: e.g. Do not change the About page.
+    validations:
+      required: false

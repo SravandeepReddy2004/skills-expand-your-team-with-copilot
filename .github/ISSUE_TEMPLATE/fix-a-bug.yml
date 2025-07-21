@@ -1,0 +1,40 @@
+name: Fix a Bug
+description: Report a problem or error you found on the website.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the problem you found. Copilot will use your answers to fix it for you.
+  - type: textarea
+    id: problem_description
+    attributes:
+      label: What is the problem?
+      description: Describe the bug or error in simple terms.
+      placeholder: e.g. Students cannot sign up for activities.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What should be true when the bug is fixed?
+      placeholder: e.g. Students can sign up without errors.
+    validations:
+      required: true
+  - type: textarea
+    id: hints
+    attributes:
+      label: Hints, Tips, or Suggestions
+      description: Any ideas or examples to help Copilot get started?
+      placeholder: e.g. This worked last week before the update.
+    validations:
+      required: false
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations or Related Info
+      description: Anything Copilot should avoid, or files/areas to focus on?
+      placeholder: e.g. Only affects the signup page.
+    validations:
+      required: false

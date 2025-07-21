@@ -16,7 +16,6 @@ app = FastAPI(
     title="Mergington High School API",
     description="API for viewing and signing up for extracurricular activities"
 )
-
 # Initialize database with sample data if empty
 database.init_database()
 
